@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>MISSION-TPMR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+        <div class="cercle"></div>
+      <header>
+        <a href="#">
+          <img src="Media/Logo1.png" class="logo" />
+        </a><br><br>
+
+      </header>
+      <div class="container">
+        <div class="texte">
+            <h2>Spécialiste de transfert avec des véhicules adaptés pour <span>Personne à Mobilité Réduite</span></h2>
+            <p>Transport et transfert de personne à mobilité réduite toute distances, dans les meilleures conditions, grâce à une équipe de professionnnels experimentés. Faire confiance à MISSION-TPMR, c'est l'assurance d'un service de qualité accompli en toute sécurité</p>
+            <a href="mailto:taxi4mission@gmail.com">Nous contacter par mail</a>
+
+    
+        </div>
+        <div class="imgBox">
+            <img src="Media/Lambor.png" class="Lambor">
+        </div>
+      </div>
+      <ul class="catalogue">
+          <li><img src="Media/Lambor.png" onclick="imgSlider('Media/Lambor.png');changeCouleurCercle('#0a1285da')"></li>
+          <li><img src="Media/FordMustangb.png" onclick="imgSlider('Media/volkswagen.png');changeCouleurCercle('##87d9e9')"></li>
+          <li><img src="Media/Lambor1.png" onclick="imgSlider('Media/norm.png');changeCouleurCercle('#ec9940')"></li>
+          <li><img src="Media/kia.png" onclick="imgSlider('Media/life.png');changeCouleurCercle('#2d2f42f0')"></li>
+
+
+      </ul>
+      <ul class="reseau">
+        <li><a href="https://www.facebook.com" title="Suivez-nous sur Facebook!"><img src="Media/facebook.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com" title="Suivez-nous sur Instagram!"><img src="Media/instagram.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com" title="Rejoignez-nous sur notre chaine Youtube!"><img src="Media/youtube.png" alt=""></a></li>
+        <li><a href="https://wa.me/+33642495824" title="Call in English"><img src="Media/ang.png" alt=""></a></li>
+        <li><a href="https://wa.me/+33650184765" title="Appeler en Français"><img src="Media/fr.png" alt=""></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Lambor').src = anything;            
+        }
+        function changeCouleurCercle(color){
+            const cercle = document.querySelector('.cercle');
+            cercle.style.background = color;
+        }
+
+
+
+    </script>    
+  </body>
+</html>
