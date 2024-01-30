@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <title>Nos Véhicules TPMR</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <div id="carrousel">
+          <div id="container">
+          </div>
+          <img src="images/bouton.png" class="bouton" id="d" />
+          <img src="images/bouton.png" class="bouton" id="g" />
+        </div>
+        <script>
+            document.body.onload=function(){
+                nbr=5;
+                p=0;
+                container=document.getElementById("container");
+                g=document.getElementById("g");
+                d=document.getElementById("d");
+                container.style.width=(800*nbr)+"px";
+                for(i=1; i<=nbr;i++){
+                    div=document.createElement("div");
+                    div.className="photo";
+                    div.style.backgroundImage="url('images/im"+i+".jpg')";
+                    container.appendChild(div);
+    
+                }
+                afficherMasquer();
+               
+            }
+    
+            g.onclick=function () {
+                if(p>-nbr+1)
+                p--;
+                container.style.transform="translate("+p*800+"px)";
+                container.style.transform="all 0.5s ease";
+                afficherMasquer();
+            }
+    
+            d.onclick=function () {
+                if(p<0)
+                p++;
+                container.style.transform="translate("+p*800+"px)";
+                container.style.transform="all 0.5s ease";
+                afficherMasquer();
+            }
+            function afficherMasquer(){
+                if(p==-nbr+1)
+                    g.style.visibility="hidden";
+                else
+                    g.style.visibility="visible";
+    
+                if(p==0)
+                    d.style.visibility="hidden";
+                else
+                    d.style.visibility="visible";
+    
+    
+            }
+        </script>
+      </body>
+</html>
