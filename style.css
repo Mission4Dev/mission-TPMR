@@ -28,7 +28,7 @@ header .logo{
     position: relative;
     max-width: 200px;
     cursor: pointer;
-    background-color: #87d9e9;
+    background-color: #454342f0;
 }
 
 .container{
@@ -48,12 +48,12 @@ header .logo{
 .container .texte h2{
     color: #fff;
     font-size: 1.5em;
-    line-height: 65px;
+    line-height: 45px;
     font-weight: 500;
 }
 
 .container .texte h2 span{
-    color: #3090d9;
+    color: #e60d0d;
     font-size: 60px;
     font-weight: 900;
 }
@@ -66,7 +66,7 @@ header .logo{
     margin-top: 20px;
     padding: 8px 20px;
     color: snow;
-    background: #3090d9;
+    background: #e60d0d;
     border-radius: 40px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -103,7 +103,7 @@ header .logo{
     left: 40%;
     bottom: 20px;
     transform: translateX(-50);
-    display: flex;
+    display:block;
 }
 
 .catalogue li{
