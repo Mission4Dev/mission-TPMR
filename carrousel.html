@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nos Véhicules TPMR</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="retour">
+        <a  href="index.html" title="Page d'accueil"
+          ><img src="Media/retour.png" alt="flèche de retour"
+        /></a>
+    </div>
+
+       
+    <div class="trans">
+        <h3>
+          Pour réussir votre transfert! <br /><span>
+            réservez votre véhicule par mail! Ou par WhatsApp au </span
+          ><br />
+          +33650184765 /+33642495824
+        </h3>
+    </div>
+      <div class="container">
+        <div class="box1">
+          <ul class="services">
+            <li>Mise à disposition</li>
+            <li>Forfait ou Taximètre</li>
+            <li>Confort & sécurité</li>
+            <li>Devis sur demande</li>
+            <li>Qualité & efficacité</li>
+            <li>Respect & ponctualité</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <div id="carrousel">
+            <div id="container"></div>
+            <img src="Media/bouton.png" class="bouton" id="d" />
+            <img src="Media/bouton.png" class="bouton" id="g" />
+          </div>
+        </div>
+      </div>
+    
+
+    <script>
+      document.body.onload = function () {
+        nbr = 8;
+        p = 0;
+        container = document.getElementById("container");
+        g = document.getElementById("g");
+        d = document.getElementById("d");
+        container.style.width = 400 * nbr + "px";
+        for (i = 1; i <= nbr; i++) {
+          div = document.createElement("div");
+          div.className = "photo";
+          div.style.backgroundImage = "url('Media/im" + i + ".png')";
+          container.appendChild(div);
+        }
+        afficherMasquer();
+      };
+
+      g.onclick = function () {
+        if (p > -nbr + 1) p--;
+        container.style.transform = "translate(" + p * 400 + "px)";
+        container.style.transform = "all 0.5s ease";
+        afficherMasquer();
+      };
+
+      d.onclick = function () {
+        if (p < 0) p++;
+        container.style.transform = "translate(" + p * 400 + "px)";
+        container.style.transform = "all 1.5s ease";
+        afficherMasquer();
+      };
+      function afficherMasquer() {
+        if (p == -nbr + 1) g.style.visibility = "hidden";
+        else g.style.visibility = "visible";
+
+        if (p == 0) d.style.visibility = "hidden";
+        else d.style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>

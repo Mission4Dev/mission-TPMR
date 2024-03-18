@@ -1,17 +1,26 @@
+Ponctualité
+Confort
+Qualité
+Securité
+Respect
+Efficacité
+Tout nos véhicules respectent l'environnement
+Devis sur demande
+-----------------------------------------------------------------
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 section{
-    position: fixed;
+    position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 2%;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +31,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.2rem 5%;
+    padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,55 +116,11 @@ header .navbar a{
     clip-path: circle(600px at right 500px);
  }
 
+
 /* Responsive */
 @media (max-width: 992px) {
     header{
         padding: 1.3rem 5%;
-    }
-
-    section{
-        display: flex;
-    }
-
-    .cercle{
-        clip-path: circle(400px at right 300px);
-        margin-top: 8%;
-    }
-
-    .container .imgBox img{
-        padding: 5px;
-        width: 360px;
-    }
-
-    .catalogue{
-        position: absolute;
-        padding: 1.3rem 10%;
-        top: 70%;
-        transform: translateX(-50);
-        display:flex;
-        flex-direction: column;
-    }
-
-    .catalogue li{
-        margin: 0 4px;
-    }
-
-    .catalogue li img{
-        width: 60px; 
-     }
-
-     .container .texte a{
-        font-size: 8px;
-        letter-spacing: 1px;
-        align-items: center;
-    }
-
-    ul.catalogue{       
-        margin-bottom: 10%;
-        align-self: self-start;
-        
-           
-    
     }
 }
 
@@ -206,90 +171,21 @@ header .navbar a{
     }
 
     .cercle{
-        clip-path: circle(150px at right 125px);
-        margin-top: 18%;
-    }
-
-    .container{ 
-        position: relative;
-        margin-bottom: 300px;
-        margin-top: 0;
-        width: 100%;
-        justify-content: center;        
-        align-items: center;
+        clip-path: circle(300px at right 250px);
     }
 
     .container .imgBox{
-        width: 50%;
-        justify-content:center;        
-        margin-top: 5px;
-        
-    
-    }
-
-    .container .imgBox img{
-        padding: 5px;
-        width: 160px;
-        margin-bottom: 300px;
-    }
-
-    .container .texte{
-        position: absolute;
-        width: 250px;
-        text-align: left;
-        margin-bottom: 50px;
-    }
-    
-    .container .texte h2{    
-        color: #fff;
-        font-size: 0.2em;
-        line-height: 20px;
-        font-weight: 160;
-    }
-
-    .container .texte p{
-        color: rgb(10, 144, 182);
-        font-size: 10px;
-        font-weight: 160;
-    }
-    
-    .container .texte h2 span{
-        color: #e60d0d;
-        font-size: 14px;
-    }
-
-    .container .texte a{
-        font-size: 8px;
-        letter-spacing: 1px;
-    }
-
-    .catalogue{
-        position: absolute;
-        /* padding: 1.3rem 1.2rem; */
-        bottom: 20px;
-        transform: translateX(-50);
-        display:flex;
-        flex-direction: column;
-    }
-
-    .catalogue li{
-        margin: 0 2px;
-    }
-
-    .catalogue li:hover{
-        transform: translateY(-20px);
-    }
-    
-    .catalogue li img{
-        width: 60px; 
-     }
-    ul.catalogue{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1px;
         margin-top: 50px;
-        margin-bottom: 1%;
-        
-
-    }  
     
+    }
+    
+    .container .imgBox img{
+        max-width: 600px;
+    }
 
  
 }
@@ -297,8 +193,7 @@ header .navbar a{
 
 
 .container{
-    margin-top: 10px;
-    margin-bottom: 30px;     
+    margin-top: 1%; 
     position: relative;
     width: 100%;
     display: flex;
@@ -307,39 +202,44 @@ header .navbar a{
 }
 
 .container .texte{
-    position: absolute;
-    max-width: 500px;
+    position: relative;
+    max-width: 600px;
 }
 
 .container .texte h2{
     color: #fff;
-    font-size: 1.7em;
-    line-height: 40px;
-    font-weight: 400;
+    font-size: 2em;
+    line-height: 45px;
+    font-weight: 500;
 }
 
 .container .texte h2 span{
     color: #e60d0d;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 900;
 }
 
 .container .texte p{
     color: #fff;
-    
 }
 
 .container .texte a{
-    margin-bottom: 50px;
+    margin-top: 20px;
     padding: 8px 20px;
-    color: #fff;
+    color: snow;
     background: #e60d0d;
     border-radius: 40px;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
+
+}
+
+.container .texte a img{
     max-width: 50px;
-   
+    margin-top: 20px;
+    color: snow;
+
 }
 
 .iconwhatsapp{
@@ -347,30 +247,23 @@ header .navbar a{
 }
 
 .container .imgBox{
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: flex-end;
     padding: 1px;
-    margin-top: 20px;
-    margin-bottom: 5%;
+    margin-top: 50px;
 
 }
 
 .container .imgBox img{
-    padding: 5px;
-    max-width: 700px;
-}
-
-ul.catalogue{
-   
-    top: 67%;
-       
+    max-width: 1200px;
 }
 
 .catalogue{
-    position: absolute; 
-    padding: 1.3rem 30%;
-    bottom: 10px;
+    position: absolute;
+    right: 20%;
+    padding: 1.3rem 10%;
+    bottom: 20px;
     transform: translateX(-50);
     display:block;
 }
@@ -378,7 +271,7 @@ ul.catalogue{
 .catalogue li{
     list-style: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
     cursor: pointer;
     transform: 0.5s;
 }
@@ -418,3 +311,5 @@ ul.catalogue{
    max-width: 50px; 
 }
 
+
+------------------------------------------------------------------
