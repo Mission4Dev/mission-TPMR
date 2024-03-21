@@ -176,6 +176,13 @@ h3 span {
 
     }
 
+    .services li {
+        font-size: 12px;
+        margin-bottom: 2%;
+        margin-top: 1%;
+        padding: 3px;
+    }
+
 }
 
 .services {
@@ -198,14 +205,6 @@ h3 span {
     border-end-end-radius: 95%;
   }
   
-  @media (max-width: 768px) {
-    .services li {
-        font-size: 12px;
-        margin-bottom: 2%;
-        margin-top: 1%;
-        padding: 3px;
-    }
-  }
   
   @media (max-width: 576px) {
     .box1{
