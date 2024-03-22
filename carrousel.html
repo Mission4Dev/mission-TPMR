@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="cercle"></div>
     <div class="retour">
-        <a  href="index.html" title="Page d'accueil"
+        <a  href="index.html" title="Retour"
           ><img src="Media/retour.png" alt="flèche de retour"
         /></a>
     </div>
@@ -29,29 +30,31 @@
         </h3>
     </div>
       <div class="container">
-        <div class="box1">
-          <ul class="services">
-            <li>Mise à disposition</li>
-            <li>Forfait ou Taximètre</li>
-            <li>Confort & sécurité</li>
-            <li>Devis sur demande</li>
-            <li>Qualité & efficacité</li>
-            <li>Respect & ponctualité</li>
-          </ul>
-        </div>
-        <div class="box2">
+
+        <div class="box2" title="Galleries">
           <div id="carrousel">
             <div id="container"></div>
             <img src="Media/bouton.png" class="bouton" id="d" />
             <img src="Media/bouton.png" class="bouton" id="g" />
           </div>
         </div>
+
+        <div class="box1" title="Nos points forts">
+          <ul class="services">                        
+            <li>Confort & sécurité</li>            
+            <li>Qualité & efficacité</li>
+            <li>Respect & ponctualité</li>
+            <li>Forfait ou Taximètre</li>
+            <li>Mise à disposition</li>
+            <li>Devis sur demande</li>
+          </ul>
+        </div>
       </div>
     
 
     <script>
       document.body.onload = function () {
-        nbr = 8;
+        nbr = 11;
         p = 0;
         container = document.getElementById("container");
         g = document.getElementById("g");
