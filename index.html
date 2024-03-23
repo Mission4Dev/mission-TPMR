@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
     <title>MISSION-TPMR</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet"href="style.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css"/>   
     <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/js/boxicons.min.js"></script>
 
-
- 
   </head>
   <body>
     <section>
-      <div class="cercle"></div>
+      <div class="cercle">
+
+
+      
+      </div>
       <header>
         <a href="#"><img src="Media/Logo1.png" class="logo" /></a>
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="icons">
-          <i class='bx bx-menu' id="menu-icon" style='color: #fff'  ></i>
-          <i class='bx bx-x' id="close-icon" style='color: #fff' ></i>
+          <i class="bx bx-menu" id="menu-icon" style="color: #fff"></i>
+          <i class="bx bx-x" id="close-icon" style="color: #fff"></i>
         </label>
         <nav class="navbar">
-          <a href="index.html" style="--i:0;" >Accueil</a>
-          <a href="#" style="--i:1;" title="En construction" >A propos</a>
-          <a href="carrousel.html" style="--i:2;" >Galleries</a>
-          <a href="#" style="--i:3;" title="En construction" >Services</a>
-          <a href="mailto:taxi4mission@gmail.com;aziz_joba@hotmail.com" target="_blank" style="--i:4;" >Contact</a>
+          <a href="index.html" style="--i: 0">Accueil</a>
+          <a href="#" style="--i: 1" title="En construction">A propos</a>
+          <a href="carrousel.html" target="_blank" style="--i: 2">Galleries</a>
+          <a href="#" style="--i: 3" title="En construction">Services</a>
+          <a
+            href="mailto:taxi4mission@gmail.com;aziz_joba@hotmail.com"
+            target="_blank"
+            style="--i: 4"
+            >Contact</a
+          >
+          
         </nav>
-
-      </header>
-      <div class="container">
         
-        <div class="texte">
+      </header>
 
+                    <!-- htmlmusuc -->
+      
+                    <audio id="audio" loop>
+                      <source src="Media/kaplunskyia-pixabay.mp3" type="audio/mpeg" />
+            
+                      Votre navigateur ne supporte pas l'élément <code>audio</code>.
+                    </audio>
+            
+                    <!-- <button id="playButton">Musique</button> -->
+            
+                    
+                  
+                  <script>
+                    window.addEventListener("DOMContentLoaded", (event) => {
+                      var audio = document.getElementById("audio");
+                      var playButton = document.getElementById("playButton");
+            
+                      // Fonction pour démarrer ou mettre en pause la lecture
+                      function toggleAudio() {
+                        if (audio.paused) {
+                          audio.play();
+                          playButton.textContent = "Silence";
+                        } else {
+                          audio.pause();
+                          playButton.textContent = "Musique";
+                        }
+                      }
+            
+                      // Écouteur d'événement pour le clic sur le bouton de lecture
+                      playButton.addEventListener("click", function () {
+                        toggleAudio();
+                      });
+            
+                      // Contrôles de lecture audio
+                      audio.controls = true;
+            
+                      // Gérer l'état du bouton de lecture en fonction de l'état de lecture audio
+                      audio.addEventListener("play", function () {
+                        playButton.textContent = "Silence";
+                      });
+            
+                      audio.addEventListener("pause", function () {
+                        playButton.textContent = "Musique";
+                      });
+                    });
+                  </script>
+      <div class="container">
+        <div class="texte">
           <h2>
-            professionnnels de transfert avec des véhicules adaptés<br/><span
+            professionnnels de transfert avec des véhicules adaptés<br /><span
               >Pour les Personnes à Mobilité Réduite</span
             >
           </h2>
           <p>
-            Transport et transfert, dans les meilleures conditions, grâce à une équipe de
-            professionnnels experimenté. <br> Faire confiance à MISSION-TPMR, c'est
-            l'assurance d'un service de qualité accompli en toute sécurité
+            Transport et transfert, dans les meilleures conditions, grâce à une
+            équipe de professionnnels experimenté. <br />
+            Faire confiance à MISSION-TPMR, c'est l'assurance d'un service de
+            qualité accompli en toute sécurité
           </p>
-          <br/>
-          <a href="mailto:taxi4mission@gmail.com;aziz_joba@hotmail.com" target="_blank">Nous contacter par mail            
+          <br />
+          <a
+            href="mailto:taxi4mission@gmail.com;aziz_joba@hotmail.com"
+            target="_blank"
+            >Nous contacter par mail
           </a>
         </div>
 
@@ -88,33 +143,50 @@
       </ul>
       <ul class="reseau">
         <li>
-          <a href="https://www.facebook.com" target="_blank"  title="Suivez-nous sur Facebook!"
+          <button id="playButton" title="Music by a href=httpspixabay.comfruserslesfm-22579021utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=110624Oleksii Kaplunskyia from a href=httpspixabay.comutm_source=linkforest-lullaby-110624">Musique</button>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            title="Suivez-nous sur Facebook!"
             ><img src="Media/facebook.png" alt=""
           /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com" target="_blank" title="Suivez-nous sur Instagram!"
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            title="Suivez-nous sur Instagram!"
             ><img src="Media/instagram.png" alt=""
           /></a>
         </li>
         <li>
           <a
-            href="https://www.youtube.com" target="_blank" title="Rejoignez-nous sur notre chaine Youtube!"
+            href="https://www.youtube.com"
+            target="_blank"
+            title="Rejoignez-nous sur notre chaine Youtube!"
             ><img src="Media/youtube.png" alt=""
           /></a>
         </li>
         <li>
-          <a href="https://wa.me/+33642495824" target="_blank" title="Call in English"
+          <a
+            href="https://wa.me/+33642495824"
+            target="_blank"
+            title="Call in English"
             ><img src="Media/ang.png" alt=""
           /></a>
         </li>
         <li>
-          <a href="https://wa.me/+33650184765" target="_blank" title="Appeler en Français"
+          <a
+            href="https://wa.me/+33650184765"
+            target="_blank"
+            title="Appeler en Français"
             ><img src="Media/fr.png" alt=""
           /></a>
         </li>
       </ul>
-    </section>  
+    </section>
 
     <script type="text/javascript">
       function imgSlider(anything) {
@@ -125,5 +197,6 @@
         cercle.style.background = color;
       }
     </script>
-   </body>
+    
+  </body>
 </html>

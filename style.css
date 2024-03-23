@@ -105,7 +105,46 @@ header .navbar a{
     height: 100%;  
     background: #3090d9;
     clip-path: circle(600px at right 500px);
- }
+}
+/*style pour audio*/
+
+#audio {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* Ajustez la largeur selon vos besoins */
+    max-width: 300px; /* Ajustez la largeur maximale selon vos besoins */
+    background-color: #e60d0d; /* Couleur de fond du lecteur */
+    border-top: 2px solid #333; /* Bordure supérieure */
+    border-radius: 25px;
+    padding: 5px; /* Espacement intérieur */
+    z-index: 9999; /* Assurez-vous que le lecteur reste au-dessus du contenu */
+    display: none;
+}
+  
+button#playButton {
+    align-items: center;
+    width: 60px;
+    height: 60px;    
+    font-size: 10px;
+    /* display: block; */
+    margin: 0 auto;
+    padding: 5px 5px;
+    background-color:  #e60d0d4a; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+}
+  
+button#playButton:hover {
+    background-color:rgba(242, 156, 26, 0.428); /* Couleur de fond du bouton au survol */
+}
+  
+/*fin style pour audio*/
+  
 
 
  
@@ -426,7 +465,13 @@ ul.catalogue{
         
 
     }
-    
+
+    button#playButton {
+        align-items: center;
+        width: 50px;
+        height: 50px;    
+        font-size: 8px;
+    }
  }
 
  @media (max-width: 576px){
@@ -547,7 +592,14 @@ ul.catalogue{
 
       .reseau li img{
         max-width: 40px; 
-     }
+    }
+
+    button#playButton {
+        align-items: center;
+        width: 40px;
+        height: 40px;    
+        font-size: 6px;
+    }
     
 
  }
