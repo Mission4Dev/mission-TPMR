@@ -14,10 +14,11 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color:rgba(223, 151, 117, 0.484) /* Couleur de fond avec une opacité de 0.5 */;
     background-image: url("./Media/transfert.gif");    
     background-position: center;
-    background-repeat: repeat;
-    background-size: 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .cercle{
@@ -63,7 +64,7 @@ body {
 }
 
 .trans{
-    background:rgba(0, 0, 0, rgba(0, 0, 0, .1));
+    background:rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
     border-radius: 25px;
     padding: 10px;
@@ -160,12 +161,22 @@ h3 span {
     background:  #e60d0d;   
     border-start-start-radius: 95%;
     border-end-end-radius: 95%;
+    font-size: 12px;
   }
 
 @media (max-width: 768px) {
     /* Styles pour les écrans de petite taille */
     h3 {
         font-size: 20px; /* Réduire la taille de la police */
+    }
+
+    body {
+        height: 100%;
+        background-color:rgba(228, 110, 55, 0.945) /* Couleur de fond avec une opacité de 0.5 */;
+        background-image: url("./Media/font1.jpg");    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .container{
@@ -218,6 +229,8 @@ h3 span {
         margin-bottom: 2%;
         margin-top: 1%;
         padding: 3px;
+        color: rgba(242, 160, 38, 0.904);
+        background: rgba(250, 0, 0, .1);
     }
 
     #carrousel #container {
