@@ -171,9 +171,10 @@ h3 span {
     }
 
     body {
+        position:static;
         height: 100%;
         background-color:rgba(228, 110, 55, 0.945) /* Couleur de fond avec une opacité de 0.5 */;
-        background-image: url("./Media/font1.jpg");    
+        background-image: url("./Media/pexels-shvets-production-6980179.jpg");    
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -210,6 +211,7 @@ h3 span {
     .trans{
         margin-bottom: 10%;
         margin-top: 10%;
+        background: rgba(0,0,0,.1);
 
     }
     h3 {
@@ -230,7 +232,7 @@ h3 span {
         margin-top: 1%;
         padding: 3px;
         color: rgba(242, 160, 38, 0.904);
-        background: rgba(250, 0, 0, .1);
+        background: rgba(0, 0, 0, .2);
     }
 
     #carrousel #container {
@@ -272,7 +274,9 @@ h3 span {
         width: 30px;
     }
 
-
+    .services{
+        position: relative;
+    }
 
     h3 {
         font-size: 12px; /* Réduire la taille de la police */
