@@ -15,7 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color:rgba(223, 151, 117, 0.484) /* Couleur de fond avec une opacité de 0.5 */;
-    background-image: url("./Media/transfert.gif");    
+    background-image: url("./Media/pexels-shvets-production-6980179.jpg");    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -27,7 +27,7 @@ body {
     left: 0;
     width: 100%;   
     height: 100%;  
-    background: #0a1285da;
+    background: rgba(34, 138, 34, 0.495);
     clip-path: circle(400px at right 260px);
     z-index: -1;
  }
@@ -64,7 +64,7 @@ body {
 }
 
 .trans{
-    background:rgba(0, 0, 0, .1);
+    background: rgba(0,0,0,.6);
     backdrop-filter: blur(50px);
     border-radius: 25px;
     padding: 10px;
@@ -75,13 +75,13 @@ body {
 
 h3 {
     text-align: center;
-    color: #e60d0d;
+    color: rgba(48, 159, 48, 0.995);
     margin-bottom: 20px; /* Ajout de marge en bas */
 
 }
 
 h3 span {
-    color:rgba(242, 160, 38, 0.904);
+    color:#fff;
     font-size: 17px;
     font-weight: 200;
 }
@@ -147,7 +147,7 @@ h3 span {
     list-style-type: none;
     padding: 5px;
     /* color: rgba(242, 160, 38, 0.904); */
-    color: aliceblue;
+    color:#fff;
     display: flex;
     flex-wrap: wrap;
   }
@@ -158,7 +158,8 @@ h3 span {
     margin-top: 2%;
     padding: 10px;
     text-align: center;
-    background:  #e60d0d;   
+    color: #fff;
+    background: rgba(34, 138, 34, 0.734);   
     border-start-start-radius: 95%;
     border-end-end-radius: 95%;
     font-size: 12px;
@@ -184,7 +185,7 @@ h3 span {
         flex-direction: column;
     }
     .cercle{
-        background: rgba(242, 156, 26, 0.727);
+        background: rgba(34, 138, 34, 0.495);
         clip-path: circle(200px at right 160px);
     }
 
@@ -211,16 +212,16 @@ h3 span {
     .trans{
         margin-bottom: 10%;
         margin-top: 10%;
-        background: rgba(0,0,0,.1);
+        background: rgba(0,0,0,.6);
 
     }
     h3 {
-        font-size: 10px; /* Réduire la taille de la police */
-        color: rgba(242, 160, 38, 0.904);
+        font-size: 15px; /* Réduire la taille de la police */
+        color: rgba(48, 159, 48, 0.995);
     }
 
     h3 span{
-        color:   #e60d0d;
+        color: #fff;
         font-size: 15px;
         font-weight: 200;
 
@@ -231,8 +232,8 @@ h3 span {
         margin-bottom: 2%;
         margin-top: 1%;
         padding: 3px;
-        color: rgba(242, 160, 38, 0.904);
-        background: rgba(0, 0, 0, .2);
+        color: #fff;
+        background: rgba(34, 138, 34, 0.734);
     }
 
     #carrousel #container {
@@ -274,20 +275,29 @@ h3 span {
         width: 30px;
     }
 
+    .trans{
+        background: rgba(0,0,0,.6);
+    }
+
     .services{
         position: relative;
     }
 
+    .services li {
+        color: #fff;
+        background: rgba(34, 138, 34, 0.734);
+    }
+
     h3 {
         font-size: 12px; /* Réduire la taille de la police */
-        color: #e60d0d;       
+        color: rgba(48, 159, 48, 0.995);       
 
     }
 
     h3 span{
         color: #fff;
         font-size: 13px;
-        font-weight: 320;
+        font-weight: 150;
 
     }
 
